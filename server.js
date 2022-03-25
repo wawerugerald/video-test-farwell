@@ -34,4 +34,7 @@ io.on('connection',socket =>{
 //listening to port 3000 locally
 app.use('/', router);
 // app.listen(process.env.port || 3000);  // another way to show
-server.listen(3000) 
+// server.listen(3000)
+server.listen(process.env.PORT || 3000)
+
+
